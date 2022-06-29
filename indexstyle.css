@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(240, 206, 13);
+    height: auto;
+
+}
+
+.top{
+    background-color:rgb(10, 10, 10);
+    width: 100% ;
+    margin-top: 0%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    height: auto;
+    
+}
+
+.buttom{
+        background-color:#ddf5f5;
+        width: 100% ;
+        margin-top: 0%;
+        padding-top: 2%;
+        padding-bottom: 3%;
+        height: auto;
+        display: inline-block;
+        
+    
+}
+
+.leftside{
+    background-color: #ddf5f5;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50% ;
+    float: left;
+    text-align: center;
+}
+
+.rigthside{
+    background-color: #ddf5f5;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50% ;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.wrapper {
+    width: 80%;
+    background-color: rgb(10, 10, 10);
+    border: 3px solid rgb(10, 10, 10);
+    margin: auto;
+    overflow-x: hidden;
+    
+  }
+
+.titlename{
+    color: azure;
+    font-family:cursive;
+    font-size: 300%;
+    text-align: left;
+}
+  
+.movingtext{
+      color: rgb(238, 238, 247);
+      
+}
+  
+.link{
+    margin: auto;
+    text-decoration: none;
+    color: #eb1c49;
+    font-size: auto;
+    display:inline-block;
+    font-family:'Franklin Gothic Medium';
+    font-size: 8vw;
+}
+
+.mainContainer{
+    background-color: #ddf5f5;
+    text-align: center;
+  
+    
+}
+
+
+.card{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftContainer{
+    width: 25%;
+    background-color: #ddf5f5;
+    height: 100%;
+    display: inline-block;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.middleContainer{
+    width: 25%;
+    background-color: #ddf5f5;
+    height: 100%;
+    display: inline-block;
+    margin-top: 3%;
+}
+
+.rightContainer{
+    width: 65%;
+    background-color: #ddf5f5;
+    height: 100%;
+    display: inline-block;
+    margin-top: 3%;
+}
+
+.navdiv{
+    width: auto;
+    height: auto;
+}
+
+#thoughts{
+    width: 50%;
+    height: 50%;
+}
+
+.image1{
+    object-fit: contain;
+}
+
+.carousel slide{
+    width: 40%;
+    float: right;
+}

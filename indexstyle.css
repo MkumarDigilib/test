@@ -91,7 +91,7 @@ body{
 }
 
 .leftContainer{
-    width: 25%;
+    width: 50%;
     background-color: #ddf5f5;
     height: 100%;
     display: inline-block;
@@ -108,7 +108,7 @@ body{
 }
 
 .rightContainer{
-    width: 65%;
+    width: 50%;
     background-color: #ddf5f5;
     height: 100%;
     display: inline-block;

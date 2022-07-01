@@ -1,5 +1,12 @@
 .card{
     background-color: #ddf5f5;
-    margin: 3%;
-    border:none;
+    border-radius: 2%;
+    column-gap: 50px;
+    box-shadow: 6px 5px 5px 2px #a0e5f1;
+
+}
+
+.mainContainer{
+    padding-left: 4%;
+    padding-right:4% ;
 }

@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="indexstyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="icon/digi@lib.ico">
+    <link rel="stylesheet" href="book.css">
 </head>
 <body>
     
     <div class="top">
-      <center> <h3 class="titlename" style="margin-top: 0px;"><a href="index.html" style="text-decoration:none; color:azure;">Digi@Lib</a></h3></center>
+       <h3 class="titlename" style="margin-top: 0px; "><a href="index.html" style="text-decoration:none; color:azure;">Digi@Lib</a></h3>
+      <h5  style="margin-right: 15px; text-align:left; display: inline-block;"><a href="index.html" style="text-decoration:none; color:azure;">Kv Andal </a></h5>
      <div class="wrapper">
       <marquee class="movingtext">A digital library, also called an online library, an internet library, a digital repository, or a digital collection is an online database of digital objects that can include text, still images, audio, video, digital documents, or other digital media formats or a library accessible through the internet.</marquee>
      </div>
@@ -35,21 +37,23 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                  Dropdown
+                  Sections
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#leftContainer">Thoughts</a></li>
+                  <li><a class="dropdown-item" href="#Periodicals">Periodicals</a></li>
+                  <li><a class="dropdown-item" href="#NCERT">NCERT/CBSE etc.</a></li>
+                  <li><a class="dropdown-item" href="#news">News</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link " href="fun.html">Learn With Fun</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" role="search" action="https://www.google.com/search" method="GET">
+              <input class="form-control me-2" type="search" placeholder="Google Search" name="q" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
@@ -60,7 +64,7 @@
     
 
     <div class="mainContainer">
-      <div class="leftContainer" style="max-width: 18rem;">
+      <div id="leftContainer" class="leftContainer" style="max-width: 18rem;">
 
         <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
           <div class="card-header">Thought for the Day</div>
@@ -134,6 +138,288 @@
           </button>
         </div>
       </div>
+
+      <div id="Periodicals" class="Periodicals">
+        <br>
+        <br>
+        <br>
+        <br>
+         <h5>Periodicals</h5>
+         <div class="card-group">
+          <div class="card">
+            <br>
+            <a target="_blank" href="https://www.outlookindia.com">  
+            <img style="height: 100%;width: 30%;"src="https://s1.mzstatic.com/us/r30/Purple2/v4/e0/2e/53/e02e53f0-3ada-9529-4148-607c42f2df94/mzl.ngcmbfru.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Outlook</h5>
+            </div>
+          </div>
+          <div class="card">
+            <br>
+              <a target="_blank" href="https://www.indiatoday.in">  
+                  <img style="height: 110%;width: 30%;"src="https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/82/a8/78/82a87804-c215-4ac9-7018-c8a7ab33ce3e/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">India Today</h5>
+            </div>
+          </div>
+          <div class="card">
+            <br>
+              <a target="_blank" href="https://www.champak.in">  
+                  <img style="height: 100%;width: 30%;"src="https://images-na.ssl-images-amazon.com/images/I/61paGGoug7L._SX638_BO1,204,203,200_.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Champak</h5>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+
+      <div class="Periodicals2">
+        
+         <div class="card-group">
+          <div class="card">
+            <br>
+            <a target="_blank" href="https://www.discovermagazine.com">  
+            <img style="height: 100%;width: 30%;"src="data:image/png;base64,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" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Discover</h5>
+            </div>
+          </div>
+          <div class="card">
+            <br>
+              <a target="_blank" href="https://www.health.com">  
+                  <img style="height: 110%;width: 30%;"src="https://www.logolynx.com/images/logolynx/cf/cf59efb49db6ecd5d136634edc29b19a.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Health</h5>
+            </div>
+          </div>
+          <div class="card">
+            <br>
+              <a target="_blank" href="https://technologymagazine.com">  
+                  <img style="height: 100%;width: 30%;"src="https://image.isu.pub/210401150630-5a58b13e91949e651e4e5f7f9fd10e24/jpg/page_1.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Technology</h5>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+
+
+      <div class="NCERT" id="NCERT">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5>NCERT / CBSE etc.</h5>
+        <div class="card-group">
+         <div class="card">
+           <br>
+           <a target="_blank" href="http://epathshala.nic.in/process.php?id=students&type=eTextbooks&ln=en">  
+           <img style="height: 100%;width: 30%;"src="https://www.tiwariacademy.com/app/uploads/2020/05/NCERT.png" class="card-img-top" alt="..."></a>
+           <div class="card-body">
+             <h5 class="card-title">NCERT TextBooks</h5>
+           </div>
+         </div>
+         <div class="card">
+           
+             <a target="_blank" href="https://www.cbse.gov.in/cbsenew/cbse.html">  
+                 <img style="height: 110%;width: 30%;"src="https://seeklogo.com/images/C/cbse-logo-46D5A6B556-seeklogo.com.png" class="card-img-top" alt="..."></a>
+           <div class="card-body">
+             <br>
+             <h5 class="card-title">CBSE</h5>
+           </div>
+         </div>
+         <div class="card">
+           <br>
+             <a target="_blank" href="https://epathshala.nic.in/epathshala.php?ln=en">  
+                 <img style="height: 100%;width: 30%;"src="https://pbs.twimg.com/profile_images/692635642992283648/OCpk686Q_400x400.png" class="card-img-top" alt="..."></a>
+           <div class="card-body">
+             <br>
+             <h5 class="card-title">Epathsala</h5>
+           </div>
+         </div>
+       </div>
+
+       <div class="card-group">
+        <div class="card">
+          <br>
+          <a target="_blank" href="https://ndl.iitkgp.ac.in">  
+          <img style="height: 100%;width: 30%;"src="https://upload.wikimedia.org/wikipedia/commons/4/4a/National_Digital_Library_of_India.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">National Digital Library</h5>
+          </div>
+        </div>
+        <div class="card">
+          
+            <a target="_blank" href="https://learnbyexample.github.io/100_page_python_intro/cover.html">  
+                <img style="height: 110%;width: 30%;"src="https://learnbyexample.github.io/100_page_python_intro/images/py_intro.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <br>
+            <h5 class="card-title">Python</h5>
+          </div>
+        </div>
+        <div class="card">
+          <br>
+            <a target="_blank" href="https://www.mygov.in">  
+                <img style="height: 100%;width: 30%;"src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/7/2020_7$largeimg_219803990.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <br>
+            <h5 class="card-title">My Gov.</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <br>
+          <a target="_blank" href="https://diksha.gov.in/#">  
+          <img style="height: 100%;width: 30%;"src="https://www.india.gov.in/sites/upload_files/npi/files/spotlights/diksha-01.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Diksha</h5>
+          </div>
+        </div>
+        <div class="card">
+          
+            <a target="_blank" href="https://www.olabs.edu.in">  
+                <img style="height: 110%;width: 30%;"src="https://www.olabs.edu.in/theme/amrita_olabs_wt_responsive/images/logo3.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <br>
+            <h5 class="card-title">OLABS<br><h6>The OLabs hosts experiments in Physical, Chemical and Biological sciences for the students from classes 9 to 12 with content aligned to NCERT /CBSE and State Board Syllabus.</h6></h5>
+          </div>
+        </div>
+        <div class="card">
+          <br>
+            <a target="_blank" href="https://www.nta.ac.in">  
+                <img style="height: 100%;width: 30%;"src="https://static.toiimg.com/thumb/msid-74447634,width-400,resizemode-4/74447634.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <br>
+            <h5 class="card-title">National Testing Agency</h5>
+          </div>
+        </div>
+      </div>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+     </div>
+
+
+     <div class="news" id="news">
+      <h5>News</h5>
+      <br>
+      <br>
+      <div class="leftside">
+
+        <div class="card" style="max-width: 18rem;">
+          <img src="https://play-lh.googleusercontent.com/qS2Frwd1Q1Gvtmg-uIbe3ZbzGRojlZOLGrVXNM9mRE_atQXnnzGCNF09OaJoI0tBmg" class="card-img-top" alt="TOI">
+          <div class="card-body">
+            <h5 class="card-title">The Times of India</h5>
+            <p class="card-text">
+              The Times of India is an Indian English-language daily newspaper and digital news media owned and managed by The Times Group. It is the third-largest newspaper in India by circulation and largest selling English-language daily in the world.
+            </p>
+            <a href="https://timesofindia.indiatimes.com" class="btn btn-primary" target="_blank">TOI</a>
+          </div>
+        </div>
+        <br>
+        <div class="card" style="max-width: 18rem;" >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Hindustan_Times_logo.svg/2560px-Hindustan_Times_logo.svg.png" class="card-img-top" alt="Hindustan Times">
+          <div class="card-body">
+            <h5 class="card-title">Hindustan Times</h5>
+            <p class="card-text">
+              Hindustan Times is an Indian English-language daily newspaper founded by Sunder Singh Lyallpuri, founder-father of the Akali movement and the Shiromani Akali Dal in the Punjab Province. It played integral roles in the Indian independence movement <br>as a nationalist daily. The newspaper is owned by Shobhana Bhartia
+            </p>
+            <a href="https://www.hindustantimes.com" class="btn btn-primary" target="_blank">Hindustan Times</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="rigthside">
+
+        <div class="card" style="max-width: 18rem;">
+          <img src="https://149359388.v2.pressablecdn.com/wp-content/uploads/2020/01/kisspng-the-daily-telegraph-newspaper-logo-united-kingdom-5b331cebb49f71.4081396515300763957398.jpg" class="card-img-top" alt="The Telegraph">
+          <div class="card-body">
+            <h5 class="card-title">The Telegraph</h5>
+            <p class="card-text">The Telegraph is an Indian English daily newspaper founded and continuously published in Kolkata since 7 July 1982. It is published by the ABP Group and the newspaper competes with The Times of India. <pre> </pre></p>
+            <a href="https://www.telegraphindia.com" class="btn btn-primary" target="_blank">TELEGRAPH</a>
+          </div>
+        </div>
+        <br>
+        <div class="card" style="max-width: 18rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrp6NeW2rmfw2yJZEuZgbDqM9KgA50u01www&usqp=CAU" class="card-img-top" alt="The Statesman">
+          <div class="card-body">
+            <h5 class="card-title">The Statesman</h5>
+            <p class="card-text">The Statesman is an Indian English-language broadsheet daily newspaper founded in 1875 and published simultaneously in Kolkata, New Delhi, Siliguri and Bhubaneswar. It incorporates and is directly descended from The Friend of India, founded in 1818.<pre> </pre></p>
+            <a href="https://www.thestatesman.com" class="btn btn-primary" target="_blank">The Statesman</a>
+          </div>
+        </div>
+
+      </div>
+
+       <br>
+       
+      <div class="leftside">
+
+        <div class="card" style="max-width: 18rem;">
+          <img src="https://new-img.patrika.com/static-assets/patrika-logo.png" class="card-img-top" alt="Patrika - पत्रिका">
+          <div class="card-body">
+            <h5 class="card-title">Patrika - पत्रिका</h5>
+            <p class="card-text">
+              राजस्थान पत्रिका हिन्दी भाषा में प्रकाशित होने वाला एक भारतीय समाचार पत्र है। यह अखबार भारत के सात राज्यों से प्रकाशित हो रहा है। यह जयपुर, जोधपुर, बीकानेर, उदयपुर, कोटा और सीकर सहित कई अन्य क्षेत्रों से राजस्थान से प्रकाशित होता है और राजस्थान के अलावा भोपाल, इन्दौर, जबलपुर, रायपुर, अहमदाबाद, ग्वालियर, कोलकाता, चेन्नई, नई दिल्ली और बंगलौर से प्रकाशित होता है।‌
+            </p>
+            <a href="https://epaper.patrika.com/Home/ArticleView?eid=20&edate=29/06/2022&pgid=333242" class="btn btn-primary" target="_blank">Patrika - पत्रिका</a>
+          </div>
+        </div>
+        <br>
+        <div class="card" style="max-width: 18rem;">
+          <img src="https://samachar4media.gumlet.io/50524-dainik-bhaskar.jpg?w=400&dpr=2.6" class="card-img-top" alt="दैनिक भास्कर">
+          <div class="card-body">
+            <h5 class="card-title">दैनिक भास्कर</h5>
+            <p class="card-text">
+              दैनिक भास्‍कर भारत का एक प्रमुख हिंदी दैनिक समाचारपत्र है। भारत के 12 राज्‍यों में इसके 65 संस्‍करण प्रकाशित हो रहे हैं। भास्कर समूह के प्रकाशनों में दिव्य भास्कर और डीएनए और पत्रिका अहा ज़िंदगी भी शामिल हैं। 2015 में यह देश का सबसे अधिक पढ़ा जाने वाला समाचार-पत्र बना।
+            </p>
+            <a href="https://epaper.bhaskar.com" class="btn btn-primary" target="_blank">दैनिक भास्कर</a>
+          </div>
+        </div>
+
+      </div>
+       
+       
+       
+      <div class="rigthside"  >
+
+        <div class="card" style="max-width: 18rem;">
+          <img src="https://www.hmvl.in/image/logo-img.jpg" class="card-img-top" alt="हिन्दुस्तान (समाचार पत्र)">
+          <div class="card-body">
+            <h5 class="card-title">हिन्दुस्तान (समाचार पत्र)</h5>
+            <p class="card-text">हिंदुस्तान या हिंदुस्तान दैनिक एक भारतीय हिंदी भाषा का दैनिक समाचार पत्र है। ऑडिट ब्यूरो ऑफ सर्कुलेशन के अनुसार, यह दुनिया में प्रचलन में 13वें और भारत में 6वें स्थान पर है। मदन मोहन मालवीय ने 1936 में इसे लॉन्च किया था। यह हिंदुस्तान मीडिया वेंचर्स लिमिटेड द्वारा प्रकाशित किया गया है। यह देश में दूसरे सबसे ज्यादा पढ़े जाने वाले दैनिक के रूप में शुमार है। हिंदुस्तान के हिंदी पट्टी में 21 संस्करण हैं। </p>
+            <a href="https://epaper.livehindustan.com" class="btn btn-primary" target="_blank">हिन्दुस्तान (समाचार पत्र)</a>
+          </div>
+        </div>
+        <br>
+        <div class="card" style="max-width: 18rem;">
+          <img src="https://s3.amazonaws.com/bookadsnow-live/newspapers/552/detail/Amar_Ujala.png?1514550993" class="card-img-top" alt="अमर उजाला
+          ">
+          <div class="card-body">
+            <h5 class="card-title">अमर उजाला</h5>
+            <p class="card-text">अमर उजाला हिन्दी का एक प्रमुख दैनिक, क्षेत्रीय समाचार पत्र है। इसका प्रारम्भ पश्चिमी उत्तर प्रदेश के आगरा से १८ अप्रैल सन १९४८ को हुआ था। इस अख़बार का वेबसाइट Amarujala.com, 1999 में लॉन्च किया गया, जो भारत में सबसे तेजी से बढ़ती हिंदी समाचार वेबसाइट में से एक है।<pre> </pre></p>
+            <a href="https://www.amarujala.com" class="btn btn-primary" target="_blank">अमर उजाला
+            </a>
+          </div>
+        </div>
+
+      </div>
+     </div>
+     <br>
+     <br>
     </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

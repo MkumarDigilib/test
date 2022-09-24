@@ -2,11 +2,17 @@
     background-color: #ddf5f5;
     border-radius: 2%;
     column-gap: 50px;
-    box-shadow: 6px 5px 5px 2px #a0e5f1;
+    box-shadow: 6px 5px 5px 2px #c2c5c3;
 
 }
 
 .mainContainer{
     padding-left: 4%;
     padding-right:4% ;
+}
+
+.frame{
+    min-height: 80%;
+    height: 1500px;
+    position: relative;
 }

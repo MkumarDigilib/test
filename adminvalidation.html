@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGI@LIB(Mkumar)</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="icon/digi@lib.ico">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body onload="generateotp()">
+    
+  <div class="top">
+    <h3 class="titlename" style="margin-top: 0px; "><a href="index.html" style="text-decoration:none; color:azure;">Digi@Lib</a></h3>
+   <h5  style="margin-right: 15px; text-align:left; display: inline-block;"><a href="index.html" style="text-decoration:none; color:azure;">Kv Andal </a></h5>
+  <div class="wrapper">
+   <marquee class="movingtext">A digital library, also called an online library, an internet library, a digital repository, or a digital collection is an online database of digital objects that can include text, still images, audio, video, digital documents, or other digital media formats or a library accessible through the internet.</marquee>
+  </div>
+ </div>
+
+    
+
+    
+
+    <div class="mainContainer">
+        <br>
+        <h6>NOTE: Only admin has the access to create post</h6>
+        <br>
+        <form action="https://formspree.io/f/mvoyrpow"  method="POST" target="_blank">
+            <input style="display: none;" type="text" name="otp" id="otp">
+            <button type="submit">Send OTP</button> 
+        </form>
+   
+        <br>
+        <br>
+        <label>Enter the OTP</label>
+        <input type="password" id="otp" name="otp">
+        <button onclick="check()">submit</button>
+        <br>
+        <br>
+     
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="admin_validation.js"></script>
+</body>
+</html>

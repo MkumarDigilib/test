@@ -19,7 +19,7 @@
   gtag('config', 'G-GB3829HVQS');
 </script>
 </head>
-<body>
+<body onload="fetchenglishthought()" >
     
     <div class="top">
        <h3 class="titlename" style="margin-top: 0px; "><a href="index.html" style="text-decoration:none; color:azure;">Digi@Lib</a></h3>
@@ -82,7 +82,7 @@
         <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
           <div class="card-header">Thought for the Day</div>
           <div class="card-body">
-            <p class="card-text">The beautiful thing about learning is that no one can take it away from you.</p>
+            <p class="card-text" name="englishthought" id="englishthought"></p>
             <h6 class="card-title"></h6>
           </div>
         </div>
@@ -90,7 +90,7 @@
         <div class="card text-bg-success mb-3" style="max-width: 18rem;">
           <div class="card-header">आज का सुविचार</div>
           <div class="card-body">
-            <p class="card-text">जिस प्रकार सूर्य स्वयं जलकर प्रकाश फैलाता है, उसी प्रकार अथक प्रयास से ही सफलता हासिल होती है.</p>
+            <p class="card-text" name="hindithought" id="hindithought"></p>
             <h6 class="card-title"></h6>
           </div>
         </div>
@@ -406,5 +406,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="editchaptechapteurl.js"></script>
   <script src="recentpost.js"></script>
+  <script src="thoughtupdate.js"></script>
 </body>
 </html>

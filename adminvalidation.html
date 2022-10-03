@@ -25,12 +25,20 @@
     
 
     <div class="mainContainer">
+      <input type="text" id="v" value="31266" style="display:none ;">
+      <input type="text" id="i" value="527" style="display:none ;">
+      <input type="text" id="j" value="16" style="display:none ;">
+      <input type="text" id="p" value="245" style="display:none ;">
+      <input type="text" id="w" value="10" style="display:none ;">
+      <input type="text" id="o" value="255" style="display:none ;">
+      <input type="text" id="b" value="16" style="display:none ;">
+      <input type="text" id="l" value="6352" style="display:none ;">
         <br>
         <h6>NOTE: Only admin has the access to create post</h6>
         <br>
-        <form action="https://formspree.io/f/mvoyrpow" method="POST" target="_blank">
+        <form id="sendotptomail" action="" method="POST" target="">
             <input style="display: none;" type="text" name="otp" id="otp">
-            <button type="submit" onclick="englishthought()">Send OTP</button> 
+            <button type="submit" onclick="valuecheck()">Send OTP</button> 
         </form>
    
         <br>
@@ -41,14 +49,7 @@
         <br>
         <br>
         <div style="display:inline-block;width: 100%;">
-          <input type="text" id="v" value="31266" style="display:none ;">
-          <input type="text" id="i" value="527" style="display:none ;">
-          <input type="text" id="j" value="16" style="display:none ;">
-          <input type="text" id="p" value="245" style="display:none ;">
-          <input type="text" id="w" value="10" style="display:none ;">
-          <input type="text" id="o" value="255" style="display:none ;">
-          <input type="text" id="b" value="16" style="display:none ;">
-          <input type="text" id="l" value="6352" style="display:none ;">
+          
         <button onclick="englishthought()"style="margin-right:2%">Update English Thought</button>
         <button onclick="hindithought()">Update Hindi Thought</button>
         </div>

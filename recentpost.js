@@ -1,4 +1,6 @@
 var color=['brown','red','blue','warning','pink']
+var num_sec=432000
+var tag_name=''
 var i=0;
 var file_data
     fetch('https://script.google.com/macros/s/AKfycbzf2QLs_qOM1BZo23tvWCtULNuAotQtRxG-uAS6sjoN6a_eJ0Q-ixdG2Fu3q_THdEkN/exec')
@@ -12,7 +14,22 @@ var file_data
             return Math.floor(Math.random() * max);
           }
           i=i+1;
-          console.log(i)
+          //console.log(i)
+
+          post_time=values.time
+          const now = new Date()  
+          const utcMilllisecondsSinceEpoch = now.getTime() + (now.getTimezoneOffset() * 60 * 1000)  
+          const utcSecondsSinceEpoch = Math.round(utcMilllisecondsSinceEpoch / 1000)
+          if( (utcSecondsSinceEpoch - post_time) <= num_sec){
+               tag_name='New'
+          }
+          else{
+             tag_name=''
+          }
+          
+
+
+
           var indexofarray=getRandomInt(5)
           var colorvalue=color[indexofarray]
           if(values.Link != '' &&  i>=i2){
@@ -25,6 +42,7 @@ var file_data
          background: #f5c89b;
        background: linear-gradient(to right, #f1f4f5, #d2d5d5);
        margin: 0 auto; margin-top:1%;" id="cardcolor">
+       <h6 id="tag" name="tag" style=" color:white;  background-color:blue; margin-left:90% ; position:absolute;"  >${tag_name}</h6>
          <div class="card__header">
            <img style="height:100%; display:inline-block; width: 50%; margin-left:;" src="${values.imageurl}" alt="card__image" class="card-img-top" >
          </div>

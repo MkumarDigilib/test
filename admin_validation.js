@@ -8,7 +8,7 @@ function generateotp(){
 
 
 function check(){
-    let enteredotp=document.getElementById('otp').value
+    let enteredotp=document.getElementById('otp2').value
     if(enteredotp == value2){
      window.location.href="update.html"
     }

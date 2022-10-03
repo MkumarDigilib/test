@@ -28,7 +28,7 @@
     <div class="mainContainer">
         <br>
         <h6>Note: Max character limt 210 for details input.</h6>
-        <form action="https://script.google.com/macros/s/AKfycbzgFfpPXAOISI9RaidKLGJDeFHJxf-mmQ4LgZ8F1zxmf9cfpRdlK8S33D2DWgtA5PYq/exec"
+        <form action="https://script.google.com/macros/s/AKfycbwsE3iWhHe2qQv2Iw0x9CxBhhiq-xpaXms35jQSIzRcnQ3fOuNbKM0oet3i6y3uv7w0/exec"
               method="post" target="_blank">
             <table class="tableform" border="0" cellspacing=20>
             <tr>
@@ -52,17 +52,17 @@
             </tr>
             <tr>
               <td style="text-align:left">Detail of the post</td>
-              <td style="text-align:left">Email Id</td>
+              
             </tr>
             <tr>
               <td><input type="text" size="34" id="detail" maxlength="210" name="detail" ></td>
-              <td><input type="text" size="34" id="email"  name="email" ></td>
+              <td><input style="display:none;" type="text"  id="time"  name="time" ></td>
             </tr>
           </table>
           <br>
           <br>
           <div class="buttondiv" style="text-align:center">
-            <input class="sub" type="submit"></div>
+            <input class="sub" type="submit" onclick="generatetimetag()"></div>
           
           </form>
 
@@ -70,5 +70,6 @@
     </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Timetagpost.js"></script>
 </body>
 </html>

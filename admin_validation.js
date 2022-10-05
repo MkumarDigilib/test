@@ -36,7 +36,7 @@ function valuecheck(){
     var cd3=Math.floor((((((((((((((((v*i)*j)*p)/w)/o)/b)/l)*l)*b)*o)*w)/p)/j)/i)))
     let z=prompt("Enter the value")
     if(z==cd3){
-        document.getElementById('sendotptomail').action="https://formspree.io/f/mvoyrpow"
+        document.getElementById('sendotptomail').action="https://formspree.io/f/maykjvav"
         document.getElementById('sendotptomail').target="_blank"
     }else{
         alert("Note: Only Admin can edit this panel  !!!!")

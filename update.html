@@ -11,17 +11,40 @@
     <link rel="stylesheet" href="book.css">
     
 </head>
-<body>
+<body onload="stime()">
     
   <div class="top">
-    <h3 class="titlename" style="margin-top: 0px; "><a href="index.html" style="text-decoration:none; color:azure;">Digi@Lib</a></h3>
+    <h6 class="titlename" style="margin-top: 0px; "><a href="index.html" style="text-decoration:none; font-size: 70%; color:azure;">Digi@Lib</a></h6>
    <h5  style="margin-right: 15px; text-align:left; display: inline-block;"><a href="index.html" style="text-decoration:none; color:azure;">Kv Andal </a></h5>
   <div class="wrapper">
    <marquee class="movingtext">A digital library, also called an online library, an internet library, a digital repository, or a digital collection is an online database of digital objects that can include text, still images, audio, video, digital documents, or other digital media formats or a library accessible through the internet.</marquee>
   </div>
- </div>
+  <h6 id="tmt" style="color:white; text-align: right;"></h6>
+  <script>
+    function stime(){
+    const time= new Date()
+    let h=time.getHours()
+    let m=time.getMinutes()
+    let s=time.getSeconds()
+    let milli=time.getMilliseconds()
+    h=checktimeunit(h)
+    m=checktimeunit(m)
+    s=checktimeunit(s)
+    console.log(h,m,s)
+    document.getElementById('tmt').innerHTML=h + ":" + m + ":" + s +" "+"IST" ;
+    setTimeout(stime,1000)
+    }
+  
+function checktimeunit(i){
+  
+      if(i<10){i = "0" + i}
+      return i
+  
+}
 
-    
+  </script>
+ </div>
+   
 
     
 

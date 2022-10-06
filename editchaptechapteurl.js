@@ -28,4 +28,26 @@ function fetchurl(){
         document.getElementById("chaptechapteurl").href=(completedata[0].url)
         document.getElementById("chaptechapteurl2").href=(completedata[0].url)
         console.log(completedata[0].url)})
+        stime()
+}
+
+function stime(){
+    const time= new Date()
+    let h=time.getHours()
+    let m=time.getMinutes()
+    let s=time.getSeconds()
+    let milli=time.getMilliseconds()
+    h=checktimeunit(h)
+    m=checktimeunit(m)
+    s=checktimeunit(s)
+    console.log(h,m,s)
+    document.getElementById('tmt').innerHTML=h + ":" + m + ":" + s +" "+"IST" ;
+    setTimeout(stime,1000)
+    }
+  
+function checktimeunit(i){
+  
+      if(i<10){i = "0" + i}
+      return i
+  
 }

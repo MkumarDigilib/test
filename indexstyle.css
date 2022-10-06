@@ -1,22 +1,25 @@
 body{
-    background-color: #7feeee;
+    background-color: #F8C471;
     height: auto;
     
 
 }
 
 .top{
-    background-color:rgb(10, 10, 10);
+    /*background-color:rgb(4, 73, 246);*/
+    background-image: url("PHOTOs/top_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100% ;
     margin-top: 0%;
     padding-top: 0%;
-    padding-bottom: 0.01%;
+    padding-bottom: 1%;
     height: auto;
     
 }
 
 .buttom{
-        background-color:#7feeee;
+        background-color:#F8C471;
         width: 100% ;
         margin-top: 0%;
         padding-top: 0;
@@ -28,7 +31,7 @@ body{
 }
 
 .leftside{
-    background-color: #7feeee;
+    background-color: #F8C471;
     background-repeat: no-repeat;
     background-size: contain;
     width: 50% ;
@@ -37,7 +40,7 @@ body{
 }
 
 .rigthside{
-    background-color: #7feeee;
+    background-color: #F8C471;
     background-repeat: no-repeat;
     background-size: contain;
     width: 50% ;
@@ -48,7 +51,8 @@ body{
 
 .wrapper {
     width: 80%;
-    background-color: rgb(10, 10, 10);
+    background-image: url("PHOTOs/top_background.jpeg");
+    /*background-color: rgb(10, 10, 10);*/
     border: 3px solid rgb(10, 10, 10);
     margin: auto;
     overflow-x: hidden;
@@ -56,14 +60,14 @@ body{
   }
 
 .titlename{
-    color: azure;
+    color: white;
     font-family:cursive;
     font-size: 300%;
     text-align: left;
 }
   
 .movingtext{
-      color: rgb(238, 238, 247);
+      color: white;
       
 }
   
@@ -78,7 +82,7 @@ body{
 }
 
 .mainContainer{
-    background-color: #7feeee;
+    background-color: #F8C471;
     text-align: center;
    
     
@@ -94,7 +98,7 @@ body{
 
 .leftContainer{
     width: 50%;
-    background-color: #7feeee;
+    background-color: #F8C471;
     height: 100%;
     display: inline-block;
     margin: auto;
@@ -103,7 +107,7 @@ body{
 
 .middleContainer{
     width: 25%;
-    background-color: #7feeee;
+    background-color: #F8C471;
     height: 100%;
     display: inline-block;
     margin-top: 3%;
@@ -111,7 +115,7 @@ body{
 
 .rightContainer{
     width: 50%;
-    background-color: #7feeee;
+    background-color: #F8C471;
     height: 100%;
     display: inline-block;
     margin-top: 3%;
